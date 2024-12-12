@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "PressStart2P";
+  src: url("./fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+
+:root {
+  font-family: "PressStart2P", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --black: #242424;
+  --gray: #f1f1f19f;
+  --gray-dark: #848484;
+  --gray-extra-dark: #606060;
+  --gray-med: #d9d9d9;
+  --gray-light: #f9f9f9;
+
+  color: var(--gray-light);
+  background-color: var(--black);
+}
+
+html {
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-extra-dark);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
